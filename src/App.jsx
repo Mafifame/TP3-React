@@ -41,8 +41,8 @@ function App() {
 
       if (choix1.symbole === choix2.symbole) {
         setCartes((prev) =>
-          prev.map((c) =>
-            c.symbole === choix1.symbole ? { ...c, trouve: true } : c
+          prev.map((clik) =>
+            clik.symbole === choix1.symbole ? { ...clik, trouve: true } : clik
           )
         );
         resetTour();
